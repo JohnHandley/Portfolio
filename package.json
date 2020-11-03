@@ -1,0 +1,21 @@
+{
+  "name": "@john.handley/portfolio",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "ci": "echo \"Running CI...\"",
+    "build": "echo \"Building...\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnHandley/Portfolio.git"
+  },
+  "author": "John@Handley.dev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnHandley/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JohnHandley/Portfolio#readme"
+}
