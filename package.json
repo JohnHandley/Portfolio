@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "ci": "echo \"Running CI...\"",
+    "prebuild": "sass --no-source-map ./src/styles/page.scss ./public/page.css",
     "build": "cross-env NODE_ENV=production webpack",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "webpack serve"
@@ -24,7 +25,10 @@
     "@typescript-eslint/parser": "^4.6.1",
     "cross-env": "^7.0.2",
     "eslint": "^7.12.1",
+    "fibers": "^5.0.0",
     "fork-ts-checker-webpack-plugin": "^5.2.1",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
     "ts-loader": "^8.0.9",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.5",
