@@ -31,6 +31,32 @@ module.exports = {
                     }
                 },
                 exclude: /node_modules/,
+            },
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    // Creates `style` nodes from JS strings
+                    'style-loader',
+                    // Translates CSS into CommonJS
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: !isProd,
+                        },
+                    },
+                    // Compiles Sass to CSS
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: !isProd,
+                            implementation: require('sass'),
+                            sassOptions: {
+                                fiber: require('fibers'),
+                                outputStyle: 'compressed',
+                            },
+                        },
+                    },
+                ],
             }
         ]
     },
