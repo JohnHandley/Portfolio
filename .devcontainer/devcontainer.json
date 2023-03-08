@@ -10,7 +10,11 @@
 		"vscode": {
 			"settings": {},
 			"extensions": [
-				"streetsidesoftware.code-spell-checker"
+				"streetsidesoftware.code-spell-checker",
+				"dbaeumer.vscode-eslint",
+				"unifiedjs.vscode-mdx",
+				"rvest.vs-code-prettier-eslint",
+				"oderwat.indent-rainbow"
 			]
 		}
 	},
