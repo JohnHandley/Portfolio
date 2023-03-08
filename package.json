@@ -1,39 +1,33 @@
 {
-  "name": "@john.handley/portfolio",
-  "version": "1.0.0",
-  "description": "portfolio site",
-  "main": "index.js",
+  "private": true,
+  "name": "cara",
+  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "version": "0.2.14",
+  "author": "LekoArts",
+  "license": "0BSD",
+  "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
-    "ci": "echo \"Running CI...\"",
-    "prebuild": "sass --no-source-map ./src/styles/page.scss ./public/page.css",
-    "build": "cross-env NODE_ENV=production webpack",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "webpack serve"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JohnHandley/Portfolio.git"
+  "dependencies": {
+    "@lekoarts/gatsby-theme-cara": "^5.0.5",
+    "gatsby": "^5.5.0",
+    "gatsby-plugin-manifest": "^5.5.0",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.30",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "author": "John@Handley.dev",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JohnHandley/Portfolio/issues"
-  },
-  "homepage": "https://github.com/JohnHandley/Portfolio#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.6.1",
-    "@typescript-eslint/parser": "^4.6.1",
-    "cross-env": "^7.0.2",
-    "eslint": "^7.12.1",
-    "fibers": "^5.0.0",
-    "fork-ts-checker-webpack-plugin": "^5.2.1",
-    "sass": "^1.29.0",
-    "sass-loader": "^10.0.5",
-    "ts-loader": "^8.0.9",
-    "ts-node": "^9.0.0",
-    "typescript": "^4.0.5",
-    "webpack": "^5.4.0",
-    "webpack-cli": "^4.2.0",
-    "webpack-dev-server": "^3.11.0"
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "cross-env": "^7.0.3",
+    "typescript": "^4.9.4"
   }
 }
