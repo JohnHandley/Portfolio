@@ -1,10 +1,10 @@
 {
-  "name": "Portfolio-Dev-Default",
-  "image": "mcr.microsoft.com/devcontainers/universal:2",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {}
-  },
-  // Configure tool-specific properties.
+	"name": "Portfolio-Dev-Default",
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers/features/node:1": {}
+	},
+	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
@@ -14,8 +14,8 @@
 			]
 		}
 	},
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [3000],
-  // Use 'postCreateCommand' to run commands after the container is created.
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [9000],
+	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "yarn install"
 }
