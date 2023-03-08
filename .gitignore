@@ -64,6 +64,4 @@ typings/
 **/.cache
 public
 
-.idea
-.vscode
 .DS_Store
